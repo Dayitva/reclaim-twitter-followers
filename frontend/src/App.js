@@ -10,7 +10,7 @@ export default function App() {
 
   function generateProof() {
     axios
-        .post("https://reclaim-twitter.onrender.com/generateProof")
+        .post("https://reclaim-twitter-backend.onrender.com/generateProof")
         .then((res) => {
           setURL(res.data.url);
           console.log(res.data.url);

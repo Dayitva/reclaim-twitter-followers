@@ -20,7 +20,7 @@ app.get("/", function (req, res) {
 app.post('/generateProof', async (req, res) => {
   const sessionId = reclaimprotocol.utils.generateUuid();
   // await db.store({ ...req.body, sessionId });
-  const callbackUrl = 'localhost:4000/callback/'
+  const callbackUrl = 'https://reclaim-twitter-backend.onrender.com/callback/'
   const template = await buildTemplate(callbackUrl, sessionId);
   console.log(template);
   console.log(JSON.stringify(template._template.claims));
