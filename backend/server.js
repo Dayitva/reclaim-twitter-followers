@@ -70,7 +70,7 @@ async function buildTemplate(callbackUrl, sessionId) {
         provider: 'http',
         payload: {
                 metadata: {
-                  name: "Number of Twitter followers", // What data you're extracting from the user's profile
+                  name: "Has more than 100 Twitter followers", // What data you're extracting from the user's profile
                   logoUrl: "https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" 
                 },
                 url: 'https://twitter.com/home', //URL which needs to be opened to extract information from 
